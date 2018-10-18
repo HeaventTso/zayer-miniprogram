@@ -1,0 +1,9 @@
+<block wx:if="{{ show }}">
+<view class="mask" catchtouchmove='_move' >
+  <view class="dialog">
+    <view><slot name="title" /></view>
+    <view class="close" catchtap="_toggle">x</view>
+    <slot name="dialog"/>
+  </view>
+</view>
+</block>

@@ -1,0 +1,36 @@
+<view class="custom-class">
+  <view wx:if="{{ title }}" class="flod-box" bindtap="_toggle">
+    <view class="title" style="{{ withAttach ? '':'width:90%' }}">
+      <block wx:if="{{ icon == null && withIcon }}" >
+        <view class="image-view">
+          <image slot="icon" src="./static/defaultIcon.png" style="width:60rpx;height:60rpx;display:inline-blcok" mode="aspectFit" lazy-load="true"/>
+        </view>
+      </block>
+      <block wx:if="{{ icon  != null && withIcon  }}">
+        <view class="image-view">
+          <slot name="icon"/>
+        </view>
+      </block>
+      <text space="nbsp"> {{ title }}</text>
+    </view>
+    
+    <block wx:if="{{ withAttach }}">
+      <view class="title-attach">
+        <slot name="title_right" />
+      </view>
+    </block>
+    <block wx:if="{{ !stopFlod }}">
+    <view class='title-arrow' >
+      <block wx:if="{{ expand }}">
+        <view class="icon iconfont icon-arrowup"></view>
+      </block>
+      <block wx:else>
+        <view class="icon iconfont icon-arrowdown-copy"></view>
+      </block>
+    </view>
+    </block>
+  </view>
+  <block wx:if="{{ expand }}">
+    <slot name="content" />
+  </block>
+</view>

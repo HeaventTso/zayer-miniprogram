@@ -1,0 +1,37 @@
+@import "./static/iconfont.wxss";
+
+.flod-box {
+  margin: 0;
+  font-weight: 400;
+  font-size: 28rpx;
+  vertical-align: middle;
+  overflow:auto;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #BFBFBF;
+}
+
+.title, .title-attach, .title-arrow {
+  display: inline-block;
+  vertical-align: middle;
+}
+.title{
+  width: 59%;
+  color:#0060FF;
+  font-size:34rpx;
+  line-height:34rpx;
+}
+.title-attach{
+  text-align: right;
+  width: 31%;
+}
+.title-arrow {
+  text-align: right;
+  width: 10%;
+  color: #BFBFBF;
+  font-size:28rpx;
+  line-height: 28rpx;
+}
+.image-view{
+  display:inline-block;
+  vertical-align:middle;
+}

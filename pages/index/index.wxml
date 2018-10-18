@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view style="margin: 0 20rpx;">
+    <zayer-flod title="折叠面板信息" expand="{{true}}" withIcon="{{ true }}" withAttach="{{ true }}" stopFlod="{{ false }}">
+      <image slot="icon" src="" />
+      <text slot="title_right" >备注信息</text>
+      <view slot="content">
+
+        -------------------------------------------
+        <zayer-table table="{{ demoTable }}"></zayer-table>
+        -------------------------------------------
+
+      </view>
+    </zayer-flod>
+
+    <zayer-mask show="{{ true }}" custom-class="demoClass">
+      <view slot="title">标题</view>
+      <view slot="dialog">
+        <zayer-table table="{{ demoTable }}" custom-class="demoClass"></zayer-table>
+      </view>
+    </zayer-mask>
+  </view>
+  
+  
+</view>

@@ -1,0 +1,26 @@
+<view>
+  <slot></slot>
+  <view class="table-view">
+    <scroll-view scroll-x="{{ table.tbody.length != 0 ? true : false}}" class="custom-class table" wx:if="{{ table.thead != null }}">
+        <view class="tr" style="{{ table.thead.length > 8 ? 'display: table-row' : ''}}" >
+          <view class="th" wx:for="{{ table.thead }}" wx:key="item">
+            <text>{{ item.content }}</text>
+          </view>
+        </view>
+        
+        <block wx:if="{{ table.tbody.length != 0 }}">
+          <view class="tr" style="{{ table.thead.length > 8 ? 'display: table-row' : ''}}"
+           wx:for="{{ table.tbody }}" wx:key="itemArr" >
+            <block wx:for="{{ item }}" wx:key="item" >
+              <view class="td"><text>{{ item.content }}</text></view>
+            </block>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="tr" style="display: flex;text-align:center;align-items:center;">
+            <view style="font-size: 24rpx;color: #5B6A81;">暂无数据</view>
+          </view>
+        </block>
+    </scroll-view>
+  </view>
+</view>
