@@ -44,7 +44,8 @@
 > &emsp;&emsp;"zayer-table": "../../component/zayer-table/index"  
 > }
 
-2. 在wxml页面中直接调用
+2. 在wxml页面中直接调用  
+> &lt;zayer-table table="{{ demoTable }}" custom-class="demoClass"></zayer-table>
 
 > <zayer-table table="{{ demoTable }}" custom-class="myClass"></zayer-table>
 
