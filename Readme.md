@@ -40,8 +40,8 @@
 ## 二.Zayer-table普通表格组件
 1. 在引入页面的json文件中定义
 
-> "usingComponents": {
-> &emsp;&emsp;"zayer-table": "../../component/zayer-table/index"
+> "usingComponents": {  
+> &emsp;&emsp;"zayer-table": "../../component/zayer-table/index"  
 > }
 
 2. 在wxml页面中直接调用
