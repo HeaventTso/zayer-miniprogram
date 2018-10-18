@@ -2,13 +2,13 @@
 ***
 ## 一.Zayer-flod折叠栏组件
 
-1.在引入页面的json文件中定义
+1. 在引入页面的json文件中定义
 
 > "usingComponents": {  
 > &emsp;&emsp;"zayer-flod" : "组件存放路径/zayer-flod/index"  
 > }
 
-2.在wxml页面中直接调用
+2. 在wxml页面中直接调用
 
 > &lt;zayer-flod title="折叠栏标题" expand="{{true}}" withIcon="{{ true }}" withAttach="{{ true }}" stopFlod="{{ false }}"&gt;  
 >	&emsp;&emsp;&lt;image slot="icon" src="" /&gt;  
@@ -20,16 +20,16 @@
 >	&emsp;&emsp;&lt;/view&gt;  
 > &lt;/zayer-flod&gt;  
 
-3.属性变量备注：  
-expand:	Boolean		默认false，是否展开  
-withIcon: Boolean	默认false，是否带图标  
-withAttach: Boolean	默认false，是否附带右侧按钮或备注  
-stopFlod: Boolean	默认false，是否禁止展开  
+3. 属性变量备注：  
+***expand:	Boolean***&emsp;&emsp;默认false，是否展开  
+***withIcon: Boolean***&emsp;&nbsp;默认false，是否带图标  
+***withAttach: Boolean***&emsp;默认false，是否附带右侧按钮或备注  
+***stopFlod: Boolean***&emsp;&emsp;默认false，是否禁止展开  
   
-4.多slot说明  
-可自定义图标，需声明带slot="icon"的wxml结构  
+4. 多slot说明  
+可自定义图标，需声明带 ***slot="icon"*** 的wxml结构  
 &lt;image slot="icon" src="" />  
-可自定义右侧附属信息，如文字或按钮，需声明slot="title_right"的wxml结构  
+可自定义右侧附属信息，如文字或按钮，需声明 ***slot="title_right"*** 的wxml结构  
 &lt;text slot="title_right" >备注信息</text>  
 折叠内容定义  
 &lt;view slot="content">  
@@ -38,17 +38,17 @@ stopFlod: Boolean	默认false，是否禁止展开
 
 ***
 ## 二.Zayer-table普通表格组件
-1.在引入页面的json文件中定义
+1. 在引入页面的json文件中定义
 
 > "usingComponents": {
 > &emsp;&emsp;"zayer-table": "../../component/zayer-table/index"
 > }
 
-2.在wxml页面中直接调用
+2. 在wxml页面中直接调用
 
 > <zayer-table table="{{ demoTable }}" custom-class="myClass"></zayer-table>
 
-3.在wxml页面对应的js文件中定义
+3. 在wxml页面对应的js文件中定义
 
 > data: {  
 >	&emsp;&emsp;demoTable: {  
@@ -67,21 +67,21 @@ stopFlod: Boolean	默认false，是否禁止展开
 > &emsp;&emsp;}  
 > }  
 
-4.属性说明  
-table: 需要渲染成表格的数据对象  
-custom-class: 自定义样式  
+4. 属性说明  
+***table***: 需要渲染成表格的数据对象  
+***custom-class***: 自定义样式  
 
 
 ***
 ## 三.Zayer-mask遮罩弹出层组件
 
-1.在引入页面的json文件中定义  
+1. 在引入页面的json文件中定义  
 
 > "usingComponents": {  
 > &emsp;&emsp;"zayer-mask": "../../component/zayer-mask/index"  
 > }  
 
-2.在wxml页面中直接调用  
+2. 在wxml页面中直接调用  
 
 > &lt;zayer-mask show="{{ showFlag }}" custom-class="demoClass">  
 > &emsp;&emsp;&lt;view slot="title">标题</view>  
@@ -90,16 +90,16 @@ custom-class: 自定义样式
 > &emsp;&emsp;&lt;/view>  
 > &lt;/zayer-mask>  
 
-3.在wxml页面对应的js文件中定义    
+3. 在wxml页面对应的js文件中定义    
 
 > data: {  
 >	&emsp;&emsp;showFlag: true  
 > }  
 
-4.属性说明  
-show: Boolean 是否显示遮罩层  
-custom-class: 自定义属性  
+4. 属性说明  
+***show:*** 是否显示遮罩层  
+***custom-class:*** 自定义属性  
 
-5.多slot说明  
-title：标题wxml结构  
-dialog：主要显示内容wxml结构  
+5. 多slot说明  
+***title***：标题wxml结构  
+***dialog***：主要显示内容wxml结构  
