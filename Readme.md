@@ -1,8 +1,10 @@
-
 Zayer-miniprogram自定义组件说明文档：
 
+
 Zayer-flod折叠栏组件
-++++++++++++++++++++
+
+
+
 1.在引入页面的json文件中定义
 "usingComponents": {
     "zayer-flod" : "组件存放路径/zayer-flod/index"
@@ -37,8 +39,10 @@ stopFlod: Boolean	默认false，是否禁止展开
 
 
 
+
 Zayer-table普通表格组件
-+++++++++++++++++++++++
+
+
 1.在引入页面的json文件中定义
 "usingComponents": {
     "zayer-table": "../../component/zayer-table/index"
@@ -70,8 +74,9 @@ table: 需要渲染成表格的数据对象
 custom-class: 自定义样式
 
 
+
 Zayer-mask遮罩弹出层组件
-++++++++++++++++++++++++
+
 1.在引入页面的json文件中定义
 "usingComponents": {
     "zayer-mask": "../../component/zayer-mask/index"
