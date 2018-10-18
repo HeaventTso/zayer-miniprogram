@@ -1,11 +1,9 @@
 Zayer-miniprogram自定义组件说明文档：
 
-
-Zayer-flod折叠栏组件
-
-
+一.Zayer-flod折叠栏组件
 
 1.在引入页面的json文件中定义
+
 "usingComponents": {
     "zayer-flod" : "组件存放路径/zayer-flod/index"
 }
@@ -40,18 +38,19 @@ stopFlod: Boolean	默认false，是否禁止展开
 
 
 
-Zayer-table普通表格组件
-
-
+二.Zayer-table普通表格组件
 1.在引入页面的json文件中定义
+
 "usingComponents": {
     "zayer-table": "../../component/zayer-table/index"
 }
 
 2.在wxml页面中直接调用
+
 <zayer-table table="{{ demoTable }}" custom-class="myClass"></zayer-table>
 
 3.在wxml页面对应的js文件中定义
+
 data: {
 	demoTable: {
       thead: [
@@ -75,14 +74,16 @@ custom-class: 自定义样式
 
 
 
-Zayer-mask遮罩弹出层组件
+三.Zayer-mask遮罩弹出层组件
 
 1.在引入页面的json文件中定义
+
 "usingComponents": {
     "zayer-mask": "../../component/zayer-mask/index"
 }
 
 2.在wxml页面中直接调用
+
 <zayer-mask show="{{ showFlag }}" custom-class="demoClass">
   <view slot="title">标题</view>
   <view slot="dialog">
@@ -91,6 +92,7 @@ Zayer-mask遮罩弹出层组件
 </zayer-mask>
 
 3.在wxml页面对应的js文件中定义
+
 data: {
 	showFlag: true
 }
