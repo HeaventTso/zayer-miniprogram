@@ -9,7 +9,7 @@
         </view>
         
         <block wx:if="{{ table.tbody.length != 0 }}">
-          <view class="tbody" style="height:{{ tbodyHeight }}">
+          <view class="tbody" style="max-height:{{ tbodyHeight }}">
           <view class="tr" style="{{ table.thead.length > 8 ? 'display: table-row' : ''}}"
            wx:for="{{ table.tbody }}" wx:key="itemArr" >
             <block wx:for="{{ item }}" wx:key="item" >
