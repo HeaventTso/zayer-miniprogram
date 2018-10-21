@@ -69,8 +69,8 @@
 > }  
 
 4. 属性说明  
-***table***: 需要渲染成表格的数据对象 
-***tbodyHeight***: 表格内容的滚动高度，需要带上单位px、rpx、%、vh、vw
+***table***: 需要渲染成表格的数据对象  
+***tbodyHeight***: 表格内容的滚动高度，需要带上单位px、rpx、%、vh、vw  
 ***custom-class***: 自定义样式  
 
 
