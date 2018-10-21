@@ -45,7 +45,7 @@
 > }
 
 2. 在wxml页面中直接调用  
-> &lt;zayer-table table="{{ demoTable }}" custom-class="demoClass"></zayer-table>
+> &lt;zayer-table table="{{ demoTable }}" tbodyHeight="100px" custom-class="demoClass"></zayer-table>
 
 > <zayer-table table="{{ demoTable }}" custom-class="myClass"></zayer-table>
 
@@ -69,7 +69,8 @@
 > }  
 
 4. 属性说明  
-***table***: 需要渲染成表格的数据对象  
+***table***: 需要渲染成表格的数据对象 
+***tbodyHeight***: 表格内容的滚动高度，需要带上单位px、rpx、%、vh、vw
 ***custom-class***: 自定义样式  
 
 
