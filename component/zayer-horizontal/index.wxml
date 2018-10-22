@@ -1,0 +1,11 @@
+<!--component/zayer-horizontal.wxml-->
+<view wx:if="{{ horizontal }}"  class="horizontal" style="margin-bottom:{{ winHeight - winWidth }}px;">
+  <view class="content">
+    <slot name="content" />
+    <view class="tips" ><slot name="tips" /></view>
+    <view class="shrink" catchtap='_closeHorizontal'>
+      <text space='ensp'> x </text>
+    </view>
+  </view>
+</view>
+

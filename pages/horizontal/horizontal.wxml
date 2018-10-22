@@ -1,0 +1,24 @@
+<!--pages/horizontal/horizontal.wxml
+transform:translate(-{{ tanslate }}px, -{{ tanslate }}px) rotate(90deg)
+
+ translate({{ -tanslate }}px, {{ tanslate }}px)
+
+ 
+<view wx:if="{{ horizontal }}"  class="horizontal" style="margin-bottom:{{ winHeight - winWidth }}px;">
+  <view class="content">
+    <zayer-table table="{{ tableDemo }}" tbodyHeight="{{ winWidth - 44 }}px" ></zayer-table>
+    <view class="tips" >变更时间：2018-10-21</view>
+
+    <view class="shrink" catchtap='closeHorizontal'>
+      <text space='ensp'> x </text>
+    </view>
+  </view>
+</view>
+ -->
+
+<zayer-horizontal horizontal="{{ false }}">
+  <view slot="content">
+    <zayer-table table="{{ tableDemo }}" tbodyHeight="{{ winWidth - 44 }}px" ></zayer-table>
+  </view>
+  <view slot="tips" >变更时间：2018-10-21</view>
+</zayer-horizontal>

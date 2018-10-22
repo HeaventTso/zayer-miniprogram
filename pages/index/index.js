@@ -4,6 +4,8 @@ const app = getApp()
 
 Page({
   data: {
+    showMask: false,
+    horizontal: false,
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -27,6 +29,16 @@ Page({
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+  horizontalScreen: function (e) {
+    this.setData({
+      horizontal: true
+    })
+  },
+  mask: function (e) {
+    this.setData({
+      showMask: true
     })
   },
   onLoad: function () {
@@ -56,6 +68,23 @@ Page({
         }
       })
     }
+  },
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+    let _this = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        let winHeight = res.windowHeight;
+        let winWidth = res.windowWidth;
+        console.log(winWidth);
+        _this.setData({
+          winWidth: winWidth,
+          winHeight: winHeight
+        });
+      },
+    })
   },
   getUserInfo: function(e) {
     console.log(e)

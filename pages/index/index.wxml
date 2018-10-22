@@ -11,15 +11,32 @@
         <zayer-table table="{{ demoTable }}"></zayer-table>
         -------------------------------------------
 
-      </view>
-    </zayer-flod>
+        <text catchtap='horizontalScreen' space='emsp'>表格横屏  </text>
+        <text catchtap='mask'>表格弹窗</text>
 
-    <zayer-mask show="{{ true }}" custom-class="demoClass">
+      </view>
+
+      
+
+    </zayer-flod>
+    
+    
+    <!-- 遮罩弹出层 -->
+    <zayer-mask show="{{ showMask }}" custom-class="demoClass">
       <view slot="title">标题</view>
       <view slot="dialog">
         <zayer-table table="{{ demoTable }}" custom-class="demoClass"></zayer-table>
       </view>
     </zayer-mask>
+
+    <!-- 水平显示 -->
+    <zayer-horizontal horizontal="{{ horizontal }}">
+      <view slot="content">
+        <zayer-table table="{{ demoTable }}" tbodyHeight="{{ winWidth - 44 }}px" ></zayer-table>
+      </view>
+      <view slot="tips" >变更时间：2018-10-21</view>
+    </zayer-horizontal>
+
   </view>
   
   

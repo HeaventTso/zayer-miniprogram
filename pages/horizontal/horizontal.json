@@ -1,12 +1,10 @@
 {
-  "navigationBarTitleText": "测试",
   "navigationBarTextStyle": "whith",
   "navigationBarBackgroundColor": "#4777FF",
-  "disenableScroll": true,
+  "enablePullDownRefresh": false,
+  "disableScroll": true,
   "usingComponents": {
-    "zayer-flod" : "../../component/zayer-flod/index",
     "zayer-table": "../../component/zayer-table/index",
-    "zayer-mask": "../../component/zayer-mask/index",
     "zayer-horizontal": "../../component/zayer-horizontal/index"
   }
 }

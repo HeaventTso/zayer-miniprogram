@@ -1,0 +1,33 @@
+/* component/zayer-horizontal.wxss */
+.content{
+  position: relative;
+  /*width:100vh;*/
+  width:100vh;
+}
+.tips, .shrink{
+  font-size: 25rpx;
+  color: #eee;
+  background: rgba(0, 0, 0, .5);
+  display: inline-block;
+  position: absolute;
+  /*bottom: 375px;*/
+  bottom: 0;
+  padding: 10rpx;
+  z-index: 1;
+}
+.tips{
+  left: 0;
+}
+.shrink{
+  right: 0;
+}
+
+.horizontal{
+  transform:rotate(90deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background:#fff;
+}
